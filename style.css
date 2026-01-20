@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b0120;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.menu {
+    display: none;
+}
+
+.btn {
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+}
+
+.hero {
+    height: 90vh;
+    background: url("/assets/hero-bg.png") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.h1 {
+
+    width: 550px;
+    height: 73px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-style: Extra Bold;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.p {
+    width: 550px;
+    height: 19px;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(45deg, pink, purple);
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: lime;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.host {
+    display: flex;
+    padding: 200 px;
+    gap: 30px;
+    padding: 50px;
+    position: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid gray;
+    background: url("/assets/footer-bg.png") center/cover;
+}
+
+@media (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .stats,
+    .feature-grid,
+    .episode-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .host {
+        flex-direction: column;
+        text-align: center;
+    }
+}
